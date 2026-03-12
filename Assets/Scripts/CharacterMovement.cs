@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
+    // This code contains the power-up pickups as well
     public float speed = 5f;
     private float baseSpeed = 5f;
+
     public float jumpForce = 5f;
     private float jumpTimer = 0f;
+    private bool isOnGround = false;
+
     private Rigidbody rb;
+
     private float horizontalInput;
+
     private bool speedOrbPicked = false;
     private float speedTimer = 0f;
 
@@ -28,15 +34,17 @@ public class CharacterMovement : MonoBehaviour
         if (Input.GetButton("Jump"))
         {
             jumpTimer += Time.deltaTime;
-            if (jumpTimer >= 3f) {
+            if (jumpTimer >= 3f && isOnGround) {
                 rb.AddForce(Vector3.up * (jumpForce + jumpTimer), ForceMode.Impulse);
+                isOnGround = false;
                 jumpForce = 5f;
                 jumpTimer = 0f;
             }
-        } else if(Input.GetButtonUp("Jump")) {
+        } else if(Input.GetButtonUp("Jump") && isOnGround) {
             rb.AddForce(Vector3.up * (jumpForce + jumpTimer), ForceMode.Impulse);
             jumpForce = 5f;
             jumpTimer = 0f;
+            isOnGround = false;
         }
         else {
             jumpTimer = 0f;
@@ -59,6 +67,8 @@ public class CharacterMovement : MonoBehaviour
             if (speedTimer >= 5f)
             {
                 baseSpeed = 5f;
+                speedOrbPicked = false;
+                speedTimer = 0f;
             }
         }
     }
@@ -76,6 +86,11 @@ public class CharacterMovement : MonoBehaviour
             baseSpeed = 7f;
             Destroy(other.gameObject);
             speedOrbPicked = true;
+        }
+
+        if (other.gameObject.tag == "Ground")
+        {
+            isOnGround = true;
         }
     }
 }
