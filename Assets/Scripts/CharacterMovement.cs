@@ -11,6 +11,7 @@ public class CharacterMovement : MonoBehaviour
     public float jumpForce = 5f;
     private float jumpTimer = 0f;
     private bool isOnGround = false;
+    private float pastJumpForce = 0f;
 
     private Rigidbody rb;
 
@@ -18,6 +19,10 @@ public class CharacterMovement : MonoBehaviour
 
     private bool speedOrbPicked = false;
     private float speedTimer = 0f;
+
+    private bool hasDoubleJump = false;
+    private float doubleJumpTimer = 0f;
+    private bool doubleJumpCalled = false;
 
     // Start is called before the first frame update
     void Start()
@@ -36,15 +41,23 @@ public class CharacterMovement : MonoBehaviour
             jumpTimer += Time.deltaTime;
             if (jumpTimer >= 3f && isOnGround) {
                 rb.AddForce(Vector3.up * (jumpForce + jumpTimer), ForceMode.Impulse);
+                pastJumpForce = jumpForce + jumpTimer;
                 isOnGround = false;
                 jumpForce = 5f;
                 jumpTimer = 0f;
             }
-        } else if(Input.GetButtonUp("Jump") && isOnGround) {
-            rb.AddForce(Vector3.up * (jumpForce + jumpTimer), ForceMode.Impulse);
-            jumpForce = 5f;
-            jumpTimer = 0f;
-            isOnGround = false;
+        } else if(Input.GetButtonUp("Jump")) {
+            if (isOnGround) {
+               rb.AddForce(Vector3.up * (jumpForce + jumpTimer), ForceMode.Impulse);
+                pastJumpForce = jumpForce + jumpTimer;
+                jumpForce = 5f;
+                jumpTimer = 0f;
+                isOnGround = false; 
+            } else if (!isOnGround && hasDoubleJump && !doubleJumpCalled) {
+                rb.AddForce(Vector3.up * (pastJumpForce), ForceMode.Impulse);
+                doubleJumpCalled = true;
+            }
+            
         }
         else {
             jumpTimer = 0f;
@@ -71,6 +84,16 @@ public class CharacterMovement : MonoBehaviour
                 speedTimer = 0f;
             }
         }
+
+        if (hasDoubleJump == true)
+        {
+            doubleJumpTimer += Time.deltaTime;
+            if (doubleJumpTimer >= 30f)
+            {
+                hasDoubleJump = false;
+                doubleJumpTimer = 0f;
+            }
+        }
     }
 
     void FixedUpdate()
@@ -91,6 +114,27 @@ public class CharacterMovement : MonoBehaviour
         if (other.gameObject.tag == "Ground")
         {
             isOnGround = true;
+            doubleJumpCalled = false;
+        }
+
+        if (other.gameObject.tag == "DoubleJumpOrb")
+        {
+            Destroy(other.gameObject);
+            hasDoubleJump = true;
+        }
+
+        if (other.gameObject.tag == "ScoreOrb")
+        {
+            Destroy(other.gameObject);
+            GameManager.Instance.AddScore(50);
+        }
+    }
+
+    private void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.tag == "Ground")
+        {
+            isOnGround = false;
         }
     }
 }
