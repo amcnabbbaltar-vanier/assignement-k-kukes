@@ -6,6 +6,8 @@ TagManager:
   tags:
   - SpeedOrb
   - Ground
+  - DoubleJumpOrb
+  - ScoreOrb
   layers:
   - Default
   - TransparentFX

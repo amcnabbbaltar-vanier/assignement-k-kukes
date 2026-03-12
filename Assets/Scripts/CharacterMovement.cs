@@ -5,6 +5,8 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     // This code contains the power-up pickups as well
+    private Vector3 startPos;
+
     public float speed = 5f;
     private float baseSpeed = 5f;
 
@@ -28,6 +30,7 @@ public class CharacterMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        startPos = transform.position;
     }
 
     // Update is called once per frame
@@ -128,6 +131,12 @@ public class CharacterMovement : MonoBehaviour
             Destroy(other.gameObject);
             GameManager.Instance.AddScore(50);
         }
+
+        if (other.gameObject.tag == "Trap")
+        {
+            GameManager.Instance.TakeDamage(1);
+            transform.position = startPos;
+        }
     }
 
     private void OnCollisionExit(Collision other)
@@ -135,6 +144,16 @@ public class CharacterMovement : MonoBehaviour
         if (other.gameObject.tag == "Ground")
         {
             isOnGround = false;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("DeathFloor"))
+        {
+            print("AAA");
+            GameManager.Instance.TakeDamage(1);
+            transform.position = startPos;
         }
     }
 }
