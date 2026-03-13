@@ -12,7 +12,7 @@ public class CharacterMovement : MonoBehaviour
 
     public float jumpForce = 5f;
     private float jumpTimer = 0f;
-    private bool isOnGround = false;
+    public bool isOnGround = false;
     private float pastJumpForce = 0f;
 
     private Rigidbody rb;
@@ -135,7 +135,6 @@ public class CharacterMovement : MonoBehaviour
         if (other.gameObject.tag == "Trap")
         {
             GameManager.Instance.TakeDamage(1);
-            transform.position = startPos;
         }
     }
 
@@ -151,7 +150,6 @@ public class CharacterMovement : MonoBehaviour
     {
         if (other.CompareTag("DeathFloor"))
         {
-            print("AAA");
             GameManager.Instance.TakeDamage(1);
             transform.position = startPos;
         }

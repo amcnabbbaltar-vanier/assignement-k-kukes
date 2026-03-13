@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - DoubleJumpOrb
   - ScoreOrb
+  - Trap
+  - DeathFloor
   layers:
   - Default
   - TransparentFX
