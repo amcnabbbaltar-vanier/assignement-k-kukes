@@ -19,6 +19,8 @@ public class CharacterMovement : MonoBehaviour
 
     private float horizontalInput;
 
+    public GameObject orbEffect;
+
     private bool speedOrbPicked = false;
     private float speedTimer = 0f;
 
@@ -109,6 +111,7 @@ public class CharacterMovement : MonoBehaviour
     {
         if (other.gameObject.tag == "SpeedOrb")
         {
+            Instantiate(orbEffect, transform.position, Quaternion.identity);
             baseSpeed = 7f;
             Destroy(other.gameObject);
             speedOrbPicked = true;
@@ -122,12 +125,14 @@ public class CharacterMovement : MonoBehaviour
 
         if (other.gameObject.tag == "DoubleJumpOrb")
         {
+            Instantiate(orbEffect, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             hasDoubleJump = true;
         }
 
         if (other.gameObject.tag == "ScoreOrb")
         {
+            Instantiate(orbEffect, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             GameManager.Instance.AddScore(50);
         }
