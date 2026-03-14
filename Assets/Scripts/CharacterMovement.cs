@@ -25,7 +25,7 @@ public class CharacterMovement : MonoBehaviour
     private bool speedOrbPicked = false;
     private float speedTimer = 0f;
 
-    private bool hasDoubleJump = false;
+    public bool hasDoubleJump = false;
     private float doubleJumpTimer = 0f;
     private bool doubleJumpCalled = false;
 
