@@ -20,6 +20,7 @@ public class CharacterMovement : MonoBehaviour
     private float horizontalInput;
 
     public GameObject orbEffect;
+    public GameObject damageEffect;
 
     private bool speedOrbPicked = false;
     private float speedTimer = 0f;
@@ -140,6 +141,7 @@ public class CharacterMovement : MonoBehaviour
         if (other.gameObject.tag == "Trap")
         {
             GameManager.Instance.TakeDamage(1);
+            Instantiate(damageEffect, rb.position, Quaternion.identity);
         }
     }
 
