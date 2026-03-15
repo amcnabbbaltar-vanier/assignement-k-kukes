@@ -31,7 +31,7 @@ public class EndScreen : MonoBehaviour
         {
             GameManager.Instance.score = 0;
             GameManager.Instance.timer = 0f;
-            GameManager.Instance.health = 0;
+            GameManager.Instance.health = 3;
         }
 
         SceneManager.LoadScene(1);
