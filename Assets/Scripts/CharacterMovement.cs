@@ -110,38 +110,10 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "SpeedOrb")
-        {
-            Instantiate(orbEffect, transform.position, Quaternion.identity);
-            baseSpeed = 7f;
-            Destroy(other.gameObject);
-            speedOrbPicked = true;
-        }
-
         if (other.gameObject.tag == "Ground")
         {
             isOnGround = true;
             doubleJumpCalled = false;
-        }
-
-        if (other.gameObject.tag == "DoubleJumpOrb")
-        {
-            Instantiate(orbEffect, transform.position, Quaternion.identity);
-            Destroy(other.gameObject);
-            hasDoubleJump = true;
-        }
-
-        if (other.gameObject.tag == "ScoreOrb")
-        {
-            Instantiate(orbEffect, transform.position, Quaternion.identity);
-            Destroy(other.gameObject);
-            GameManager.Instance.AddScore(50);
-        }
-
-        if (other.gameObject.tag == "Trap")
-        {
-            GameManager.Instance.TakeDamage(1);
-            Instantiate(damageEffect, rb.position, Quaternion.identity);
         }
     }
 
@@ -159,6 +131,35 @@ public class CharacterMovement : MonoBehaviour
         {
             GameManager.Instance.TakeDamage(1);
             transform.position = startPos;
+        }
+
+        if (other.CompareTag("SpeedOrb"))
+        {
+            Instantiate(orbEffect, transform.position, Quaternion.identity);
+            baseSpeed = 7f;
+            Destroy(other.gameObject);
+            speedOrbPicked = true;
+        }
+
+        if (other.CompareTag("DoubleJumpOrb"))
+        {
+            Instantiate(orbEffect, transform.position, Quaternion.identity);
+            Destroy(other.gameObject);
+            hasDoubleJump = true;
+            doubleJumpTimer = 0f;
+        }
+
+        if (other.CompareTag("ScoreOrb"))
+        {
+            Instantiate(orbEffect, transform.position, Quaternion.identity);
+            Destroy(other.gameObject);
+            GameManager.Instance.AddScore(50);
+        }
+
+        if (other.CompareTag("Trap"))
+        {
+            GameManager.Instance.TakeDamage(1);
+            Instantiate(damageEffect, rb.position, Quaternion.identity);
         }
     }
 }
