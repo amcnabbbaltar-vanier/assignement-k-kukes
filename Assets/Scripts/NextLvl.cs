@@ -20,6 +20,7 @@ public class NextLvl : MonoBehaviour
     private void OnTriggerEnter(Collider other){
         if (other.CompareTag("Player"))
         {
+            GameManager.Instance.health = 3;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
