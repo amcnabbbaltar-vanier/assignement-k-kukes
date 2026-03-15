@@ -424,6 +424,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 927254131334401496, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      propertyPath: orbEffect
+      value: 
+      objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
       propertyPath: m_Name
       value: GreenOrb (4)
@@ -471,8 +475,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 122631822}
   m_SourcePrefab: {fileID: 100100000, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+--- !u!1 &122631821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+  m_PrefabInstance: {fileID: 122631820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &122631822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122631821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d517dc96069bc1409adb42d4953cab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &134202983
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,8 +835,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2041148357944980125, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 261919005}
   m_SourcePrefab: {fileID: 100100000, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
+--- !u!1 &261919004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2041148357944980125, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
+  m_PrefabInstance: {fileID: 261919003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &261919005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261919004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1fae08d9e02ba458847466688a0dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &439567710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,6 +1261,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4478210873883631822, guid: c4f7125502677544795bf0c9191069f2, type: 3}
+      propertyPath: orbEffect
+      value: 
+      objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 6188457068403194382, guid: c4f7125502677544795bf0c9191069f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 89.22
@@ -1729,6 +1777,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 927254131334401496, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      propertyPath: orbEffect
+      value: 
+      objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
       propertyPath: m_Name
       value: GreenOrb (9)
@@ -1776,8 +1828,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 919510698}
   m_SourcePrefab: {fileID: 100100000, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+--- !u!1 &919510697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+  m_PrefabInstance: {fileID: 919510696}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &919510698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919510697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d517dc96069bc1409adb42d4953cab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &920002649
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,6 +1963,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4532273455779309542, guid: ad3dd4e7dd86eee47bbfdac878b544e3, type: 3}
+      propertyPath: orbEffect
+      value: 
+      objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 5785507530040003068, guid: ad3dd4e7dd86eee47bbfdac878b544e3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 71.07
@@ -2342,6 +2418,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 927254131334401496, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      propertyPath: orbEffect
+      value: 
+      objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
       propertyPath: m_Name
       value: GreenOrb (10)
@@ -2389,8 +2469,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1061070687}
   m_SourcePrefab: {fileID: 100100000, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+--- !u!1 &1061070686 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+  m_PrefabInstance: {fileID: 1061070685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1061070687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061070686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d517dc96069bc1409adb42d4953cab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1077034397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2595,6 +2695,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 927254131334401496, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      propertyPath: orbEffect
+      value: 
+      objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
       propertyPath: m_Name
       value: GreenOrb (2)
@@ -2642,8 +2746,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1175747546}
   m_SourcePrefab: {fileID: 100100000, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+--- !u!1 &1175747545 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+  m_PrefabInstance: {fileID: 1175747544}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1175747546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175747545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d517dc96069bc1409adb42d4953cab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1185194191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2652,6 +2776,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 927254131334401496, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      propertyPath: orbEffect
+      value: 
+      objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
       propertyPath: m_Name
       value: GreenOrb (6)
@@ -2699,8 +2827,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1185194193}
   m_SourcePrefab: {fileID: 100100000, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+--- !u!1 &1185194192 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+  m_PrefabInstance: {fileID: 1185194191}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1185194193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185194192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d517dc96069bc1409adb42d4953cab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1192118212
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,8 +3021,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2041148357944980125, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1226662789}
   m_SourcePrefab: {fileID: 100100000, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
+--- !u!1 &1226662788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2041148357944980125, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
+  m_PrefabInstance: {fileID: 1226662787}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1226662789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226662788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1fae08d9e02ba458847466688a0dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1234578128
 GameObject:
   m_ObjectHideFlags: 0
@@ -3294,6 +3462,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 927254131334401496, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      propertyPath: orbEffect
+      value: 
+      objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
       propertyPath: m_Name
       value: GreenOrb
@@ -3341,8 +3513,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1371680066}
   m_SourcePrefab: {fileID: 100100000, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+--- !u!1 &1371680065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+  m_PrefabInstance: {fileID: 1371680064}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1371680066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371680065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d517dc96069bc1409adb42d4953cab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1390178502
 GameObject:
   m_ObjectHideFlags: 0
@@ -3561,6 +3753,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4532273455779309542, guid: ad3dd4e7dd86eee47bbfdac878b544e3, type: 3}
+      propertyPath: orbEffect
+      value: 
+      objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 5785507530040003068, guid: ad3dd4e7dd86eee47bbfdac878b544e3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.556335
@@ -3618,6 +3814,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 927254131334401496, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      propertyPath: orbEffect
+      value: 
+      objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
       propertyPath: m_Name
       value: GreenOrb (1)
@@ -3665,8 +3865,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1421111327}
   m_SourcePrefab: {fileID: 100100000, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+--- !u!1 &1421111326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+  m_PrefabInstance: {fileID: 1421111325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1421111327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421111326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d517dc96069bc1409adb42d4953cab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1458212597
 GameObject:
   m_ObjectHideFlags: 0
@@ -3885,6 +4105,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 927254131334401496, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      propertyPath: orbEffect
+      value: 
+      objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
       propertyPath: m_Name
       value: GreenOrb (3)
@@ -3932,8 +4156,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1508510257}
   m_SourcePrefab: {fileID: 100100000, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+--- !u!1 &1508510256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+  m_PrefabInstance: {fileID: 1508510255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1508510257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508510256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d517dc96069bc1409adb42d4953cab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1508573397
 GameObject:
   m_ObjectHideFlags: 0
@@ -4068,6 +4312,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 5350154158508262512, guid: e3fe52d757dbacb43a943a5d311369b8, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2141559376}
+    - target: {fileID: 5350154158508262512, guid: e3fe52d757dbacb43a943a5d311369b8, type: 3}
       propertyPath: damageEffect
       value: 
       objectReference: {fileID: 5134820420608607120, guid: d4009f7e331267945b01d1b269debf1c, type: 3}
@@ -4162,6 +4410,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4478210873883631822, guid: c4f7125502677544795bf0c9191069f2, type: 3}
+      propertyPath: orbEffect
+      value: 
+      objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 6188457068403194382, guid: c4f7125502677544795bf0c9191069f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.405785
@@ -4274,6 +4526,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2041148357944980125, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1715674465}
+    - targetCorrespondingSourceObject: {fileID: 2041148357944980125, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1715674466}
   m_SourcePrefab: {fileID: 100100000, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
 --- !u!1 &1585232655 stripped
 GameObject:
@@ -4294,6 +4549,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHeight: 2
   speed: 1
+--- !u!114 &1585232661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585232655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1fae08d9e02ba458847466688a0dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1598499517
 GameObject:
   m_ObjectHideFlags: 0
@@ -4704,6 +4971,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHeight: 2
   speed: 1
+--- !u!114 &1715674466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715674460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1fae08d9e02ba458847466688a0dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1717696463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4767,6 +5046,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2041148357944980125, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1585232660}
+    - targetCorrespondingSourceObject: {fileID: 2041148357944980125, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1585232661}
   m_SourcePrefab: {fileID: 100100000, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
 --- !u!1 &1730792964
 GameObject:
@@ -5045,6 +5327,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 927254131334401496, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      propertyPath: orbEffect
+      value: 
+      objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
       propertyPath: m_Name
       value: GreenOrb (5)
@@ -5092,8 +5378,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1739744063}
   m_SourcePrefab: {fileID: 100100000, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+--- !u!1 &1739744062 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+  m_PrefabInstance: {fileID: 1739744061}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1739744063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739744062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d517dc96069bc1409adb42d4953cab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1769496726 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6799155194134901007, guid: e3fe52d757dbacb43a943a5d311369b8, type: 3}
@@ -5662,6 +5968,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4478210873883631822, guid: c4f7125502677544795bf0c9191069f2, type: 3}
+      propertyPath: orbEffect
+      value: 
+      objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 6188457068403194382, guid: c4f7125502677544795bf0c9191069f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.76
@@ -5719,6 +6029,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 927254131334401496, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      propertyPath: orbEffect
+      value: 
+      objectReference: {fileID: 5134820420608607120, guid: 57664f4582356a444a4ec752935c5000, type: 3}
     - target: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
       propertyPath: m_Name
       value: GreenOrb (7)
@@ -5766,8 +6080,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2101015528}
   m_SourcePrefab: {fileID: 100100000, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+--- !u!1 &2101015527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4421483059172639856, guid: 3b68e795514e17648834803b1b491d20, type: 3}
+  m_PrefabInstance: {fileID: 2101015526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2101015528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101015527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d517dc96069bc1409adb42d4953cab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2135699576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5835,8 +6169,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2041148357944980125, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2135699578}
   m_SourcePrefab: {fileID: 100100000, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
+--- !u!1 &2135699577 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2041148357944980125, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
+  m_PrefabInstance: {fileID: 2135699576}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2135699578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135699577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1fae08d9e02ba458847466688a0dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2141559370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6129578367967161269, guid: e3fe52d757dbacb43a943a5d311369b8, type: 3}
@@ -6067,8 +6421,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2041148357944980125, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7696764129262015254}
   m_SourcePrefab: {fileID: 100100000, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
+--- !u!1 &7696764129262015253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2041148357944980125, guid: 1e281f61308ee8240896bb2fa6d6e936, type: 3}
+  m_PrefabInstance: {fileID: 7696764129262015252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7696764129262015254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7696764129262015253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1fae08d9e02ba458847466688a0dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

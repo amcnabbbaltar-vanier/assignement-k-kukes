@@ -13,6 +13,16 @@ public class ScorePickup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+            GameManager.Instance.AddScore(50);
+        }
     }
 }

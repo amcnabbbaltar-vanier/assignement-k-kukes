@@ -19,9 +19,6 @@ public class CharacterMovement : MonoBehaviour
 
     private float horizontalInput;
 
-    public GameObject orbEffect;
-    public GameObject damageEffect;
-
     private bool speedOrbPicked = false;
     private float speedTimer = 0f;
 
@@ -29,7 +26,7 @@ public class CharacterMovement : MonoBehaviour
     private float doubleJumpTimer = 0f;
     private bool doubleJumpCalled = false;
 
-    public AudioSource audio;
+    public AudioSource audioSource;
     public AudioClip doubleJumpAudio;
 
     // Start is called before the first frame update
@@ -65,7 +62,7 @@ public class CharacterMovement : MonoBehaviour
             } else if (!isOnGround && hasDoubleJump && !doubleJumpCalled) {
                 rb.AddForce(Vector3.up * (pastJumpForce), ForceMode.Impulse);
                 doubleJumpCalled = true;
-                audio.PlayOneShot(doubleJumpAudio);
+                audioSource.PlayOneShot(doubleJumpAudio);
             }
             
         }
@@ -139,7 +136,6 @@ public class CharacterMovement : MonoBehaviour
 
         if (other.CompareTag("SpeedOrb"))
         {
-            Instantiate(orbEffect, transform.position, Quaternion.identity);
             baseSpeed = 7f;
             Destroy(other.gameObject);
             speedOrbPicked = true;
@@ -147,23 +143,9 @@ public class CharacterMovement : MonoBehaviour
 
         if (other.CompareTag("DoubleJumpOrb"))
         {
-            Instantiate(orbEffect, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             hasDoubleJump = true;
             doubleJumpTimer = 0f;
-        }
-
-        if (other.CompareTag("ScoreOrb"))
-        {
-            Instantiate(orbEffect, transform.position, Quaternion.identity);
-            Destroy(other.gameObject);
-            GameManager.Instance.AddScore(50);
-        }
-
-        if (other.CompareTag("Trap"))
-        {
-            GameManager.Instance.TakeDamage(1);
-            Instantiate(damageEffect, rb.position, Quaternion.identity);
         }
     }
 }

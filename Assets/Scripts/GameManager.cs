@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour
     public void RestartLvl()
     {
         health = 3;
+        AddScore(-200);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

@@ -7,6 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
     public float rotateSpeed = 30f;
     public float hoverHeight = 0.05f;
     public float hoverSpeed = 1f;
+    public GameObject orbEffect;
 
     private Vector3 startPos;
 
@@ -21,5 +22,13 @@ public class NewBehaviourScript : MonoBehaviour
     {
         transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
         transform.position = new Vector3(transform.position.x, startPos.y + Mathf.Sin(Time.time * hoverSpeed) * hoverHeight, transform.position.z);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Instantiate(orbEffect, transform.position, Quaternion.identity);
+        }
     }
 }
