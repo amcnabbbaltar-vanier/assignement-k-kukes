@@ -29,6 +29,9 @@ public class CharacterMovement : MonoBehaviour
     private float doubleJumpTimer = 0f;
     private bool doubleJumpCalled = false;
 
+    public AudioSource audio;
+    public AudioClip doubleJumpAudio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +65,7 @@ public class CharacterMovement : MonoBehaviour
             } else if (!isOnGround && hasDoubleJump && !doubleJumpCalled) {
                 rb.AddForce(Vector3.up * (pastJumpForce), ForceMode.Impulse);
                 doubleJumpCalled = true;
+                audio.PlayOneShot(doubleJumpAudio);
             }
             
         }
