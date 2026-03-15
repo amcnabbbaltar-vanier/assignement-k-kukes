@@ -12,13 +12,16 @@ public class GameManager : MonoBehaviour
     public int health = 3;
     public float timer = 0f;
 
-    public Text scoreText;
-    public Text healthText;
-    public Text timerText;
-
     void Awake()
     {
-        Instance = this;
+        if (Instance == null)
+        {
+            Instance = this;   
+            DontDestroyOnLoad(gameObject);
+        } else {
+            Destroy(gameObject);
+        }
+        
     }
 
     // Start is called before the first frame update
@@ -31,10 +34,6 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-
-        scoreText.text = "Score: " + score;
-        healthText.text = "Health: " + health;
-        timerText.text = "Time: " + Mathf.FloorToInt(timer);
     }
 
     public void AddScore(int amount)
